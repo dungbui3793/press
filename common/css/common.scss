@@ -60,3 +60,16 @@ body, html {
     }
   }
 }
+
+footer {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 44px;
+    right: 44px;
+    background-color: #a2abb0;
+    height: 1px;
+  }
+}

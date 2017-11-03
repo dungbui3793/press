@@ -1,0 +1,15 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property} : #{$value};
+  -moz-#{$property}   : #{$value};
+  -ms-#{$property}    : #{$value};
+  -o-#{$property}     : #{$value};
+  #{$property}        : #{$value};
+}
+
+$info-screen-pc: "only screen and (min-width :  800px)";
+$info-tablet-big: "only screen and (max-width : 1160px)";
+$info-tab-only: "only screen and (max-width: 1160px) and (min-width: 800px)";
+$info-tablet: "only screen and (max-width : 800px)";
+$info-phone: "only screen and (max-width : 767px)";
+$info-phone-4: "only screen and (max-width : 320px)";

@@ -1,0 +1,62 @@
+@import "mixin";
+
+p, h1, h2, h3, h4, h5, ul, li {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  @include css3-prefix(transition, .3s);
+}
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  outline: none;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+body, html {
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+}
+
+.menu {
+  height: 75px;
+  background-color: #30404f;
+  .title-page-block {
+    height: 100%;
+    width: 195px;
+    background-color: #1ca9bb;
+    float: left;
+  }
+
+  img {
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  .menu-nav {
+    float: right;
+    margin-top: 35px;
+    margin-right: 120px;
+    a {
+      color: #fff;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    li {
+      display: inline-block;
+      margin-left: 50px;
+    }
+  }
+}

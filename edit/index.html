@@ -20,7 +20,7 @@
    ================================================== -->
     <link rel="stylesheet" href="../common/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../common/css/common.css" />
-    <link rel="stylesheet" href="css/edit.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
 
     <!-- google font
     ================================================== -->
@@ -40,13 +40,114 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="dashboard">
 
+<!-- Header -->
+<header class="menu clearfix">
+    <div class="title-page-block">
+        <p class="title-page-block__text">原稿作成</p>
+    </div>
+    <img src="../img/top-logo.png" alt="logo" />
+    <ul class="menu-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">配信</a></li>
+        <li><a href="#">&times;</a></li>
+    </ul>
+</header>
+
+<!-- Sidebar -->
+<div class = "dashboard-sidebar">
+    <ul class = "dashboard-sidebar__menu">
+        <li class = "dashboard-sidebar__first-item text-center">
+            <a href="javascript:;">
+                <img src="img/countdown.jpg">
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+
+        <li class = "dashboard-sidebar__menu-item">
+            <a href="javascript:;">
+                <div class="menu-item-icon darkteal">
+                    <img src="../common/img/ico/pin.png">
+                </div>
+                <p class="menu-item-name">
+                    Hit the pin
+                </p>
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+
+        <li class = "dashboard-sidebar__menu-item">
+            <a href="javascript:;">
+                <div class="menu-item-icon red">
+                    <img src="../common/img/ico/hand2.png">
+                </div>
+                <p class="menu-item-name">
+                    Raise hands
+                </p>
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+
+        <li class = "dashboard-sidebar__menu-item">
+            <a href="javascript:;">
+                <div class="menu-item-icon yellow">
+                    <img src="../common/img/ico/hand.png">
+                </div>
+                <p class="menu-item-name">
+                    Abandon hand raising
+                </p>
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+
+        <li class = "dashboard-sidebar__menu-item">
+            <a href="javascript:;">
+                <div class="menu-item-icon lightblue">
+                    <img src="../common/img/ico/doc.png">
+                </div>
+                <p class="menu-item-name">
+                    Edit
+                </p>
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="dashboard-main-content">
+    <div class="row">
+        <div class="col-md-7 left-sector-column">
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-6.jpg" class="shadow" alt="sector 6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-5.jpg" class="shadow"  alt="sector 5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-4.jpg" class="shadow"  alt="sector 4">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 right-ads-column">
+            <div class="ads-column-content">
+                <div class="ads-item">
+                    <img class="ads-item__image" src="img/ads-4.jpg" alt="ads 4">
+                </div>
+                <div class="ads-item">
+                    <img class="ads-item__image" src="img/ads-5.jpg" alt="ads 5">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../common/js/main.js"></script>
-<script type="text/javascript" src="js/edit.js"></script>
+<script type="text/javascript" src="../js/top.js"></script>
 
 </body>
 </html>

@@ -58,35 +58,41 @@
 <!-- Sidebar -->
 <div class = "dashboard-sidebar">
     <ul class = "dashboard-sidebar__menu">
+        <li class = "dashboard-sidebar__first-item text-center">
+            <a href="javascript:;">
+                <img src="img/countdown.jpg">
+            </a><!-- a element -->
+        </li><!-- Dashboard Sidebar Menu Item -->
+
         <li class = "dashboard-sidebar__menu-item">
             <a href="javascript:;">
-                <div class="menu-item-icon  orange">
-                    <img src="../common/img/ico/micro.png">
+                <div class="menu-item-icon darkteal">
+                    <img src="../common/img/ico/pin.png">
                 </div>
                 <p class="menu-item-name">
-                    Video (Audio) Upload
+                    Hit the pin
                 </p>
             </a><!-- a element -->
         </li><!-- Dashboard Sidebar Menu Item -->
 
         <li class = "dashboard-sidebar__menu-item">
             <a href="javascript:;">
-                <div class="menu-item-icon green">
-                    <img src="../common/img/ico/movie.png">
+                <div class="menu-item-icon red">
+                    <img src="../common/img/ico/hand2.png">
                 </div>
                 <p class="menu-item-name">
-                    Video Download
+                    Raise hands
                 </p>
             </a><!-- a element -->
         </li><!-- Dashboard Sidebar Menu Item -->
 
         <li class = "dashboard-sidebar__menu-item">
             <a href="javascript:;">
-                <div class="menu-item-icon teal">
-                    <img src="../common/img/ico/sim.png">
+                <div class="menu-item-icon yellow">
+                    <img src="../common/img/ico/hand.png">
                 </div>
                 <p class="menu-item-name">
-                    Word Format Download
+                    Abandon hand raising
                 </p>
             </a><!-- a element -->
         </li><!-- Dashboard Sidebar Menu Item -->
@@ -94,32 +100,10 @@
         <li class = "dashboard-sidebar__menu-item">
             <a href="javascript:;">
                 <div class="menu-item-icon lightblue">
-                    <img src="../common/img/ico/sim.png">
-                </div>
-                <p class="menu-item-name">
-                    HTML Format Download
-                </p>
-            </a><!-- a element -->
-        </li><!-- Dashboard Sidebar Menu Item -->
-
-        <li class = "dashboard-sidebar__menu-item">
-            <a href="javascript:;">
-                <div class="menu-item-icon blue">
                     <img src="../common/img/ico/doc.png">
                 </div>
                 <p class="menu-item-name">
-                    Release
-                </p>
-            </a><!-- a element -->
-        </li><!-- Dashboard Sidebar Menu Item -->
-
-        <li class = "dashboard-sidebar__menu-item">
-            <a href="javascript:;">
-                <div class="menu-item-icon">
-                    <img src="../common/img/ico/cog.png">
-                </div>
-                <p class="menu-item-name">
-                    Tool-1
+                    Edit
                 </p>
             </a><!-- a element -->
         </li><!-- Dashboard Sidebar Menu Item -->
@@ -130,41 +114,77 @@
 <!-- Main Content -->
 <div class="dashboard-main-content">
     <div class="row">
-        <div class="col-md-12 sector-image">
-            <img src="img/header-title.jpg" alt="header-title">
+        <div class="col-md-7 left-sector-column">
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-6.jpg" class="shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-5.jpg" class="shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sector-image">
+                    <img src="img/sector-4.jpg" class="shadow">
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 sector-image">
-            <img class="shadow" src="img/sector-1.jpg" alt="sector 1">
-        </div>
-        <div class="col-md-6 sector-image">
-            <img class="shadow" src="img/sector-2.jpg" alt="sector 2">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 sector-image mb-15">
-            <img class="shadow" src="img/sector-3.jpg" alt="sector 3">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="image-row">
-                <img src="img/ads-3.jpg">
-                <img src="img/ads-2.jpg">
-                <img src="img/ads-1.jpg">
+        <div class="col-md-5 right-ads-column">
+            <div class="ads-column-content">
+                <div class="ads-item">
+                    <img class="ads-item__image" src="img/ads-4.jpg">
+                </div>
+                <div class="ads-item">
+                    <img class="ads-item__image" src="img/ads-5.jpg">
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Extra Content -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" style="display:block;">
+    <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            <div class="button-set">
+                <a class="button-item  orange">
+                    <img class="button-ico" src="../common/img/ico/movie.png">
+                    <span class="button-name">動画ダウンロード</span>
+                </a>
+                <a class="button-item blue">
+                    <img class="button-ico" src="../common/img/ico/paper.png">
+                    <span class="button-name">原稿作成</span>
+                </a>
+                <a class="button-item  green">
+                    <img class="button-ico" src="../common/img/ico/micro.png">
+                    <span class="button-name">ビデオ（音声）アップロード</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="../common/js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../common/js/main.js"></script>
 <script type="text/javascript" src="../js/top.js"></script>
+
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#myModal').modal();
+        },1000)
+    })
+</script>
 
 </body>
 </html>

@@ -38,6 +38,7 @@ body, html {
     line-height: 75px;
     text-align: center;
     color: #fff; }
+  .menu > .logo img,
   .menu > img {
     margin-top: 35px;
     margin-left: 20px; }
@@ -69,7 +70,8 @@ body, html {
   .menu .icon-close {
     margin-top: 23px;
     margin-right: 58px;
-    float: right; }
+    float: right;
+    margin-left: -55px; }
 
 footer {
   position: relative; }

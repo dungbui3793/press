@@ -34,14 +34,26 @@ body, html {
     height: 100%;
     width: 195px;
     background-color: #1ca9bb;
-    float: left; }
-  .menu img {
+    float: left;
+    line-height: 75px;
+    text-align: center;
+    color: #fff; }
+  .menu > img {
     margin-top: 35px;
     margin-left: 20px; }
   .menu .menu-nav {
     float: right;
     margin-top: 35px;
     margin-right: 120px; }
+    @media (max-width: 1230px) {
+      .menu .menu-nav {
+        margin-right: 50px; } }
+    @media (max-width: 1140px) {
+      .menu .menu-nav {
+        margin-right: 20px; } }
+    @media (max-width: 1110px) {
+      .menu .menu-nav {
+        display: none; } }
     .menu .menu-nav a {
       color: #fff; }
       .menu .menu-nav a:hover {
@@ -49,6 +61,15 @@ body, html {
     .menu .menu-nav li {
       display: inline-block;
       margin-left: 50px; }
+      @media (max-width: 1350px) {
+        .menu .menu-nav li {
+          margin-left: 20px; } }
+      .menu .menu-nav li:first-child {
+        margin-left: 0; }
+  .menu .icon-close {
+    margin-top: 23px;
+    margin-right: 58px;
+    float: right; }
 
 footer {
   position: relative; }

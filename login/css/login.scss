@@ -1,0 +1,22 @@
+@import "../../common/css/mixin";
+
+.login-block {
+  .text {
+    color: #686767;
+  }
+  a.btn-login {
+    width: 562px;
+    line-height: 65px;
+    background-color: #1ba9ba;
+    color: #fff;
+    text-align: center;
+    display: block;
+    @include css3-prefix(transition, .3s);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    &:hover {
+      text-decoration: none;
+      background-color: #1a9bab;
+    }
+  }
+}

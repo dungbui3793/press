@@ -37,9 +37,12 @@ body, html {
     width: 195px;
     background-color: #1ca9bb;
     float: left;
+    line-height: 75px;
+    text-align: center;
+    color: #fff;
   }
 
-  img {
+  > img {
     margin-top: 35px;
     margin-left: 20px;
   }
@@ -48,6 +51,15 @@ body, html {
     float: right;
     margin-top: 35px;
     margin-right: 120px;
+    @media (max-width: 1230px) {
+      margin-right: 50px;
+    }
+    @media (max-width: 1140px) {
+      margin-right: 20px;
+    }
+    @media (max-width: 1110px) {
+      display: none;
+    }
     a {
       color: #fff;
       &:hover {
@@ -57,7 +69,19 @@ body, html {
     li {
       display: inline-block;
       margin-left: 50px;
+      @media (max-width: 1350px) {
+        margin-left: 20px;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
     }
+  }
+
+  .icon-close {
+    margin-top: 23px;
+    margin-right: 58px;
+    float: right;
   }
 }
 

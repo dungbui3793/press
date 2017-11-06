@@ -1,0 +1,20 @@
+.login-block .text {
+  color: #686767; }
+.login-block a.btn-login {
+  width: 562px;
+  line-height: 65px;
+  background-color: #1ba9ba;
+  color: #fff;
+  text-align: center;
+  display: block;
+  -webkit-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 40px; }
+  .login-block a.btn-login:hover {
+    text-decoration: none;
+    background-color: #1a9bab; }

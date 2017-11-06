@@ -1,0 +1,234 @@
+body.dashboard{
+    height: 100vh;
+    overflow:hidden;
+    background-color: #efefef;
+
+
+    .dashboard-sidebar {
+        width: 195px;
+        background-color: #314150;
+        height: calc(100vh - 75px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: fixed;
+        top:75px;
+        left:0;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.5);
+            outline: 1px solid slategrey;
+        }
+
+        .dashboard-sidebar__menu {
+            padding: 59px 0 70px;
+            text-indent: 0;
+            .dashboard-sidebar__first-item{
+                margin-bottom: 60px;
+            }
+
+            .dashboard-sidebar__menu-item {
+                cursor: pointer;
+                color: white;
+                margin-bottom: 14px;
+
+                * {
+                    color: inherit;
+                }
+
+                .menu-item-icon {
+                    width: 87px;
+                    height: 87px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    text-align: center;
+                    line-height: 87px;
+                    background: #999;
+                    &.default {
+                        background: #999;
+                    }
+                    &.orange {
+                        background: #ed9028;
+                    }
+                    &.blue {
+                        background: #0e6eb8;
+                    }
+                    &.lightblue {
+                        background: #469fd9;
+                    }
+                    &.teal {
+                        background: #1da196;
+                    }
+                    &.green {
+                        background: #89bc43;
+                    }
+                    &.red {
+                        background: #e55c6c;
+                    }
+                    &.yellow{
+                        background: #f9b52c;
+                    }
+                    &.darkteal{
+                        background: #0099b9;
+                    }
+                }
+                /* Dashboard sidebar menu item icon */
+
+                .menu-item-name {
+                    margin: 10px 0 4px;
+                    padding: 0 30px;
+                    color: white;
+                    text-align: center;
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+                /* Dashboard sidebar menu item name */
+            }
+            /* Dashboard sidebar Menu Item */
+        }
+        /* Dashboard sidebar menu */
+    }
+    /* Dashboad sidebar Style */
+
+    .dashboard-main-content {
+        height: calc(100vh - 75px);
+        width: calc(100% - 195px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 195px;
+        padding: 30px;
+
+        .sector-image{
+            padding-bottom: 17px;
+            img{
+                width: 100%;
+                &.shadow{
+                    box-shadow: 2px 2px 5px rgba(25,25,25,0.2);
+                }
+            }
+        }
+
+        .image-row{
+            text-align:center;
+            background-color: #8c878e;
+            margin: 0 -30px -30px;
+            padding: 50px 0;
+            white-space: nowrap;
+            img{
+                display:inline-block;
+                margin: 0 35px;
+            }
+        }
+
+        .right-ads-column{
+            margin: -30px 0;
+            min-height: calc(100vh - 75px);
+            padding: 0 25px;
+            .ads-column-content{
+                padding: 30px 95px;
+                background-color: white;
+                box-shadow: 0px 0px 5px rgba(25,25,25,0.2);
+                .ads-item{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+.title-page-block__text{
+    text-align: center;
+    line-height: 75px;
+    color:white;
+}
+
+.modal{
+    background: rgba(0,0,0,0.6);
+    .modal-dialog{
+        width: 75%;
+        max-width: 1455px;
+        margin-top: 50vh;
+        border-radius: 10px;
+        -ms-transform: translateY(-50%) !important;
+        -webkit-transform: translateY(-50%) !important;
+        transform: translateY(-50%) !important;
+
+        .modal-content {
+            min-height: 515px;
+            position: relative;
+        }
+
+        .button-set{
+            position: relative;
+            text-align: center;
+            padding: 0 35%;
+            top: 257px;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            a.button-item{
+                display:inline-block;
+                text-align: center;
+                width: 100%;
+                height: 85px;
+                line-height: 85px;
+                background: #f8931f;
+                border-radius: 7px;
+                margin: 18px 0;
+                box-shadow: 1px 1px 0 rgba(25,25,25,0.4);
+                color: white;
+                cursor:pointer;
+                position: relative;
+                &.blue{
+                    background: #00a0d2;
+                }
+                &.green{
+                    background: #8cc63e;
+                }
+                &.orange{
+                    background: #f8931f;
+                }
+
+                .button-ico{
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+                .button-name{
+                    display: inline-block;
+                }
+
+
+            }
+        }
+
+        .modal-full-img{
+            padding: 5px 0;
+            img{
+                width: 93%;
+                max-width: 1366px;
+            }
+        }
+
+        button.close{
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            color: #666;
+            font-size: 36px;
+            font-weight: 100;
+            line-height: 36px;
+        }
+    }
+}

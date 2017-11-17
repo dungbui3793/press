@@ -232,3 +232,14 @@ body.dashboard{
         }
     }
 }
+
+.col-md-8{
+    &.expand{
+        width: 69%;
+    }
+}
+.col-md-4{
+    &.narrow{
+        width: 31%;
+    }
+}
